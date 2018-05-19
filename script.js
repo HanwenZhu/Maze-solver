@@ -106,6 +106,7 @@ function search(x, y, step) {
 	
 	// 4 Directions
 	for (var direction = 0; direction < 4; direction++) {
+		// Position of next step
 		var nextX = x + next[direction][0];
 		var nextY = y + next[direction][1];
 		
@@ -116,6 +117,7 @@ function search(x, y, step) {
 		// Not blocked or reached before
 		if (!tds[nextX][nextY].blocked() && !book[nextX][nextY]) {
 			book[nextX][nextY] = true;
+			// Recurse function to next step
 			if(search(nextX, nextY, step + 1)) {
 				shortest = true;
 				tds[x][y].classList.add("shortest");
