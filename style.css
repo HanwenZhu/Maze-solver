@@ -1,0 +1,21 @@
+td {
+	width: 20px;
+	height: 20px;
+	background-color: yellow;
+}
+
+.block {
+	background-color: black;
+}
+
+.shortest {
+	background-color: green;
+}
+
+#start {
+	background-color: blue;
+}
+
+#end {
+	background-color: red;
+}
