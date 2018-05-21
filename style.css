@@ -1,21 +1,24 @@
+/* Normal cell that is not blocked */
 td {
 	width: 20px;
 	height: 20px;
 	background-color: yellow;
 }
 
+/* Blocked cell, override td{} */
 .block {
 	background-color: black;
 }
-
+/* Block in shortest route, override td{} */
 .shortest {
 	background-color: green;
 }
 
+/* Start position, override all */
 #start {
 	background-color: blue;
 }
-
+/* End position, override all */
 #end {
 	background-color: red;
 }
